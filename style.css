@@ -36,12 +36,13 @@ h1 {
 */
 main {
   background-color: #F6F8F9;
-  padding: 10px 150px;
+  padding: 20px 150px;
 }
 
 .container {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: solid black 1px;
 }
 
 #buttons div {
@@ -63,14 +64,22 @@ main {
   border: 1px solid black;
 }
 
+hr {
+  border-top: 1px solid #F6F8F9;
+}
+
 #main-info {
   padding: 30px 0 0 30px;
   
 }
 
+#main-info div {
+  margin-bottom: 30px;
+}
+
 #main-info div span {
   display: block;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 h3::before {
@@ -82,15 +91,54 @@ h3::before {
   border: 2px solid red;
   border-radius: 50%;
   padding: 5px;
+  margin-right: 10px;
 }
 
-#main-info div span::before {
+#main-info div .check::before {
   content: '\2713';
   border: 1px solid green;
   border-radius: 50%;
   padding: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
-/* croce \2718 */
+.editorial::after {
+  content: 'Editorial';
+  border: 1px solid black;
+  margin-left: 25px;
+}
 
-/* check \2713 */
+#recruiting::after {
+  content: 'Recruiting';
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+#q1::after {
+  content: 'Q1 Goals';
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+#website::after {
+  content: 'Website';
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+#mobile::after {
+  content: 'Mobile';
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+#mobile::after {
+  content: 'Mobile';
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+#sales::after {
+  content: 'Sales';
+  border: 1px solid black;
+  margin-left: 25px;
+}
