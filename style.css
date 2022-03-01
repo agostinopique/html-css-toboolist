@@ -37,11 +37,10 @@ h1 {
 */
 main {
   background-color: red
-
 }
 
 .container {
-  margin: 50px 100px 10px 100px;
+  margin: 10px 150px;
   background-color: rosybrown;
 }
 
@@ -54,3 +53,16 @@ main {
   display: block;
   line-height: 30px;
 }
+
+h3::before {
+  content: '\25BC';
+}
+
+#main-info div span::before {
+  content: '\2718';
+  border: 1px solid red;
+  border-radius: 50%;
+}
+/* croce \2718 */
+
+/* check \2713 */
