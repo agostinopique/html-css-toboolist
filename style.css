@@ -40,28 +40,58 @@ main {
 }
 
 .container {
+
   margin: 10px 150px;
   background-color: rosybrown;
+  border: 3px solid black;;
 }
 
-#first-button .blue-hue {
+#buttons div {
+  display: inline-block;
+  margin: 20px;
   text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#first-button {
   background-color: #47ACF1;
+  color: white;
+}
+
+#second-button {
+  background-color: white;
+  color: #CFD4D9;
+  border: 1px solid black;
+}
+
+#main-info {
+  margin: 30px 0 0 30px;
+  
 }
 
 #main-info div span {
   display: block;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 h3::before {
   content: '\25BC';
 }
 
-#main-info div span::before {
+#main-info div .cross::before {
   content: '\2718';
-  border: 1px solid red;
+  border: 2px solid red;
   border-radius: 50%;
+  padding: 5px;
+}
+
+#main-info div span::before {
+  content: '\2713';
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px;
 }
 /* croce \2718 */
 
