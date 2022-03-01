@@ -1,5 +1,56 @@
+/* 
+GENERALE
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+  HEADER
+*/
+header {
+  margin-left: 10px;
+  width:100%;
+
+}
+
+header div img {
+  vertical-align: middle;
+  width: 80px;
+}
+
+h1 {
+  display: inline-block;
+  line-height: 80px;
+  font-size: 60px;
+}
+
+/* 
+  MAIN
+*/
+main {
+  background-color: red
+
+}
+
+.container {
+  margin: 50px 100px 10px 100px;
+  background-color: rosybrown;
+}
+
+#first-button .blue-hue {
+  text-align: center;
+  background-color: #47ACF1;
+}
+
+#main-info div span {
+  display: block;
+  line-height: 30px;
 }
