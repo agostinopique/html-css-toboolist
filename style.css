@@ -24,7 +24,7 @@ body {
 }
 
 hr {
-  border-top: 1pxsolid #F6F8F9;
+  border-top: 1px solid #F6F8F9;
   margin-bottom: 10px;
 }
 /* 
@@ -43,7 +43,7 @@ header div img {
 
 header div .title {
   display: inline-block;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   vertical-align: middle;
 }
@@ -57,12 +57,12 @@ main {
   width: 60%;
   margin: 0 auto;
   background-color: white;
-  padding: 15px;
+  
 }
 
-/* .command {
-  margin: 0 30px;
-} */
+.command {
+  padding: 10px 30px;
+}
 
 main section .button {
   padding: 10px 15px;
@@ -82,12 +82,53 @@ main section .second {
   border: 1px solid #CFD4D9;
 }
 
+#list{
+  padding: 20px;
+}
 
+section li {
+  list-style: none;
+  padding: 10px;
+}
+{
+  font-weight: bold;
+}
+ul li .arrow::before{
+  content: '\25BE';
+}
 
+/* ul .marker::before {
+  content: 'x';
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+} */
 
+/* ul .cross::before {
+  content: \2713;
+  border: 2px solid red;
+} */
 
+/* ul .badge {
+  display: inline-block;
+} */
 
+.marker::before{
+  content: '\2713';
+  color: green;
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
 
+.marker.cross::before {
+  content: '\2718';
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
 
-/* arrow down
-content: '\25BE' */
