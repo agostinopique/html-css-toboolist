@@ -89,31 +89,16 @@ main section .second {
 
 section li {
   list-style: none;
-  padding: 10px;
+  padding: 15px;
 }
-{
+
+.list-title {
   font-weight: bold;
 }
+
 ul li .arrow::before{
   content: '\25BE';
 }
-
-/* ul .marker::before {
-  content: 'x';
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 50%;
-} */
-
-/* ul .cross::before {
-  content: \2713;
-  border: 2px solid red;
-} */
-
-/* ul .badge {
-  display: inline-block;
-} */
 
 .marker::before{
   content: '\2713';
@@ -164,7 +149,7 @@ ul li .arrow::before{
   background-color: #D863A1;
 }
 
-.sales::after {
+.sale::after {
   content: 'Sales';
   background-color: #B0C926;
 }
