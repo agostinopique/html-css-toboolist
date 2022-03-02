@@ -20,17 +20,73 @@ GENERALE
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #F6F8F9;
 }
 
+hr {
+  border-top: 1pxsolid #F6F8F9;
+  margin-bottom: 10px;
+}
 /* 
-  HEADER
+HEADER
 */
+header {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+  width: 100%;
+}
 
+header div img {
+  vertical-align: middle;
+}
+
+header div .title {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  vertical-align: middle;
+}
 
 
 /* 
 MAIN 
 */
+
+main {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 15px;
+}
+
+/* .command {
+  margin: 0 30px;
+} */
+
+main section .button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+main section .first {
+  background-color: #47ABF1;
+  border: 1px solid #47ABF1;
+}
+
+main section .second {
+  background-color: white;
+  color: #CFD4D9;
+  border: 1px solid #CFD4D9;
+}
+
+
+
+
+
+
 
 
 /* arrow down
