@@ -1,3 +1,7 @@
+/* CORREZZIONE: Ricordati che i sono molti selettori specifici: .class.class (entrambi le calssi devono essere soddisfatte), .class .class (il figlio con class dell'elemento con class), tag, tag (entrmabi i tag) ecc */
+
+/* CORREZZIONE: Ricorda che anche i commenti vanno chiusi se la sezione che denotano é lunga. */
+
 /* 
 GENERALE
 */
@@ -18,7 +22,6 @@ body {
 header {
   margin-left: 10px;
   width:100%;
-
 }
 
 header div img, header div h1 {
@@ -46,6 +49,7 @@ main {
 }
 
 /* Styling buttons */
+/* CORREZZIONE: Per evitare che, a causa del bordo del pulsante bianco esso risulti più grande, aggiungiamo un bordo anche al bottone azzurro dandogli lo stesso colore dello sfondo in modo che non si veda e aggiunga spessore. E' bene anche aggiungere un cursor: pointer; in modo che qyando si passa sopra al bottone appaia il puntaatore come cursore. */
 #buttons div {
   display: inline-block;
   text-align: center;
@@ -65,6 +69,7 @@ main {
   border: 1px solid black;
 }
 
+/* Styling <hr> */
 hr {
   border-top: 1px solid #F6F8F9;
 }
@@ -86,8 +91,11 @@ hr {
 
 /* Inserimento down-pointing arrow */
 h3::before {
-  content: '\25BC';
+  content: '\25BE';
 }
+
+/* CORREZZIONE: Si potevano inserire nella sezione UTILITY del CSS essen do un elemento potenzialmente riccorente. */
+/* CORREZZIONE: Potevi fare creando una classe che dava le indicaziono comuni a entrambi i cerchietti e poi in classi separate specificare i content e i colori diversi, bastava indicare una lettera a caso all'interno di content per la classe generale durante la costruzione e poi eliminata in seguito. N>B> Specifica altezza e larghezza in fase di costruzione */
 
 /* Inserimento check e cross */
 #main-info div .cross::before {
@@ -109,7 +117,7 @@ h3::before {
   margin-right: 10px;
 }
 
-/* Filtri to-do list */
+/* Creazione e styling badge */
 .editorial::after {
   content: 'Editorial';
   background-color: #44ABE9;

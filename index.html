@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Toboolist">
   <link rel="stylesheet" href="style.css">
-  <title>Toboolist</title>
+  <title>Toboolist</title>   
 </head>
 
 <body>
@@ -15,8 +15,8 @@
   <header>
 
     <div>
-        <img src="./assets/img/Logo.png" alt="boolean-logo">
-      
+      <img src="./assets/img/Logo.png" alt="boolean-logo">
+      <!-- CORREZZIONE: Non sarebbe da mettere in h1 perchè non è proprio un titolo. Sarebbe stato corretto inserirlo in uno <span> stylandolo nel CSS -->
       <h1>Toboolist</h1>
     </div>
   </header>
@@ -27,6 +27,7 @@
 
       <!-- Sezione pulsanti -->
       <section id="buttons">
+        <!-- CORREZZIONE: questi sono <button> e non <span>. -->
         <div id="first-button">
           <span class="blue-hue">Add Task</span>
         </div>
@@ -39,14 +40,17 @@
       
       <!-- Sezione Task manager -->
       <section id="main-info">
+        <!-- CORREZZIONE: Queste SONO LISTE, E NON SEZIONI SEPARATE, visto he dovrebberop essere dei drop-down. -->
         <div>
-          <h3>New Task</h3>
+          <h3> New Task</h3>
+          <!-- CORREZZIONE: Per inserire gli elementi he qui sono inseriti con ::before e ::after si potevano predisposrre creando degli <span> vuoti con classi adatte per poter inserire i badge, check e cross ìneìcessarie. -->
 
+            <!-- CORREZZIONI: Tutte gli <id> creati per i badge andavano inseriti come <class> perche é solo un caso che siano unici in quedta pagina. Potrebbero essere aggiunti in seguito task con lo stesso badge e a quel punto l'id non potrebbe essere ripetuto. -->
           <span class="check editorial">Quarterly Newsletter</span>
         </div>
 
         <div>
-          <h3>Today</h3>
+          <h3> Today</h3>
 
           <span class="check editorial">Recruiting blog post</span> 
 
@@ -56,15 +60,17 @@
         </div>
 
         <div>
-          <h3>Upcoming</h3>
-
-          <span class="cross">Schedule meeting with Alex</span>
-          <span class="check" id="website">Homepage refresh</span>
-          <span class="check" id="sales">Onboard new Sales team members</span>
-          <span class="check editorial">Submit update to mobile storefronts</span>
+          <h3> Upcoming</h3>
+          <div>
+            <span class="cross">Schedule meeting with Alex</span>
+            <span class="check" id="website">Homepage refresh</span>
+            <span class="check" id="sales">Onboard new Sales team members</span>
+            <span class="check editorial">Submit update to mobile storefronts</span>
+          </div>
+          
         </div>
       </section>
-       <!-- /Sezione Task manager -->
+      <!-- /Sezione Task manager -->
     </div>
     
   </main>
