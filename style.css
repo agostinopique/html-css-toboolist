@@ -2,6 +2,12 @@
 
 /* CORREZZIONE: Ricorda che anche i commenti vanno chiusi se la sezione che denotano é lunga. */
 
+/* CORREZZIONE: Per evitare che, a causa del bordo del pulsante bianco esso risulti più grande, aggiungiamo un bordo anche al bottone azzurro dandogli lo stesso colore dello sfondo in modo che non si veda e aggiunga spessore. E' bene anche aggiungere un cursor: pointer; in modo che qyando si passa sopra al bottone appaia il puntaatore come cursore. */
+
+/* CORREZZIONE: Si potevano inserire nella sezione UTILITY del CSS essen do un elemento potenzialmente riccorente. */
+/* CORREZZIONE: Potevi fare creando una classe che dava le indicaziono comuni a entrambi i cerchietti e poi in classi separate specificare i content e i colori diversi, bastava indicare una lettera a caso all'interno di content per la classe generale durante la costruzione e poi eliminata in seguito. N>B> Specifica altezza e larghezza in fase di costruzione */
+
+
 /* 
 GENERALE
 */
@@ -19,149 +25,13 @@ body {
 /* 
   HEADER
 */
-header {
-  margin-left: 10px;
-  width:100%;
-}
 
-header div img, header div h1 {
-  vertical-align: middle;
-  width: 60px;
-}
 
-h1 {
-  display: inline-block;
-  font-size: 60px;
-}
 
 /* 
-  MAIN
+MAIN 
 */
-main {
-  background-color: #F6F8F9;
-  padding: 20px 150px;
-}
-
-.container {
-  background-color: white;
-  border-radius: 10px;
-  padding: 15px 0 10px 40px; 
-}
-
-/* Styling buttons */
-/* CORREZZIONE: Per evitare che, a causa del bordo del pulsante bianco esso risulti più grande, aggiungiamo un bordo anche al bottone azzurro dandogli lo stesso colore dello sfondo in modo che non si veda e aggiunga spessore. E' bene anche aggiungere un cursor: pointer; in modo che qyando si passa sopra al bottone appaia il puntaatore come cursore. */
-#buttons div {
-  display: inline-block;
-  text-align: center;
-  padding: 8px 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-#first-button {
-  background-color: #47ACF1;
-  color: white;
-}
-
-#second-button {
-  background-color: white;
-  color: #CFD4D9;
-  border: 1px solid black;
-}
-
-/* Styling <hr> */
-hr {
-  border-top: 1px solid #F6F8F9;
-}
-
-/* Styling sezione centrale */
-#main-info {
-  padding: 30px 0 0 30px;
-  
-}
-
-#main-info div {
-  margin-bottom: 30px;
-}
-
-#main-info div span {
-  display: block;
-  line-height: 50px;
-}
-
-/* Inserimento down-pointing arrow */
-h3::before {
-  content: '\25BE';
-}
-
-/* CORREZZIONE: Si potevano inserire nella sezione UTILITY del CSS essen do un elemento potenzialmente riccorente. */
-/* CORREZZIONE: Potevi fare creando una classe che dava le indicaziono comuni a entrambi i cerchietti e poi in classi separate specificare i content e i colori diversi, bastava indicare una lettera a caso all'interno di content per la classe generale durante la costruzione e poi eliminata in seguito. N>B> Specifica altezza e larghezza in fase di costruzione */
-
-/* Inserimento check e cross */
-#main-info div .cross::before {
-  content: '\2718';
-  color: red;
-  border: 2px solid red;
-  border-radius: 50%;
-  padding: 5px;
-  margin-right: 10px;
-}
 
 
-#main-info div .check::before {
-  content: '\2713';
-  color: green;
-  border: 1px solid green;
-  border-radius: 50%;
-  padding: 5px;
-  margin-right: 10px;
-}
-
-/* Creazione e styling badge */
-.editorial::after {
-  content: 'Editorial';
-  background-color: #44ABE9;
-  padding: 10px;
-  border-radius: 15px;
-  margin-left: 25px;
-}
-
-#recruiting::after {
-  content: 'Recruiting';
-  background-color: #64C0A9;
-  margin-left: 25px;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-#q1::after {
-  content: 'Q1 Goals';
-  margin-left: 25px;
-  background-color: #9C72E4;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-#website::after {
-  content: 'Website';
-  margin-left: 25px;
-  background-color: #D863A1;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-#mobile::after {
-  content: 'Mobile';
-  margin-left: 25px;
-  background-color: #F29E32;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-#sales::after {
-  content: 'Sales';
-  margin-left: 25px;
-  background-color: #B0C926;
-  padding: 10px;
-  border-radius: 15px;
-}
+/* arrow down
+content: '\25BE' */
