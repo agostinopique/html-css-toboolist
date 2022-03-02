@@ -39,6 +39,7 @@ header {
 
 header div img {
   vertical-align: middle;
+  width: 70px;
 }
 
 header div .title {
@@ -132,3 +133,38 @@ ul li .arrow::before{
   margin-right: 10px;
 }
 
+.marker::after {
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 25px;
+}
+
+.editorial::after {
+  content: 'Editorial';
+  background-color: #44ABE9;
+}
+
+.q1::after {
+  content: 'Q1 Goals';
+  background-color: #9C72E4;
+} 
+
+.recruiting::after {
+  content: 'Recruiting';
+  background-color: #64C0A9;
+}
+
+.mobile::after {
+  content: 'Mobile';
+  background-color: #F29E32;
+}
+
+.website::after {
+  content: 'Website';
+  background-color: #D863A1;
+}
+
+.sales::after {
+  content: 'Sales';
+  background-color: #B0C926;
+}
